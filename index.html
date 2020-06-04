@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-danger">
+        <div class="container">
+            <a href="#" class="navbar-brand">Oem Calculator</a>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-body">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="productName" placeholder="Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="productPrice" placeholder="Price">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-sm" id="addBtn">
+                        <i class="fas fa-plus"> Add</i>
+                    </button>
+                    <button type="submit" class="btn btn-warning btn-sm" id="btnEdit">
+                        <i class="far fa-edit"> Save Changes</i>
+                    </button>
+                    <button type="submit" class="btn btn-danger btn-sm" id="deleteBtn">
+                        <i class="fas fa-times"> Delete</i>
+                    </button>
+                    <button type="submit" class="btn btn-secondary btn-sm" id="cancelBtn">
+                        <i class="fas fa-arrow-circle-left"> Cancel</i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card mt-3" id="productCard">
+            <table class="table">
+                <tbody id="item-list">
+                  
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-footer text-right">
+                <p>Total (AZE)-<strong><span id="total-azn">0</span>AZN</strong></p>
+                <p>Total ($)-<strong><span id="total-dollar">0</span>$</strong></p>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://kit.fontawesome.com/a87698a19e.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
